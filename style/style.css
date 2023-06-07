@@ -202,7 +202,12 @@ main{
 .section-4{
     margin-top: 45px;
 }
-
+.box-partner{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+    min-width: 30%;
+}
 .mega-square{
     display: flex;
     flex-wrap: wrap;
@@ -281,9 +286,7 @@ footer{
     width: 100%;
     display: flex;
 }
-.container-footer ul{
-    padding-left: 10;
-}
+
 .container-footer li{
     list-style-type: none;
 }
@@ -312,4 +315,92 @@ footer{
 }
 .container-subfooter p{
     color: white;
+}
+.sub-faq{
+    display: flex;
+    justify-content: space-between;
+}
+.dettagli{
+    display: none;
+}
+.faq:hover>.dettagli{
+    display: block;
+
+}
+.faq:hover>.sub-faq i{
+    rotate: 180deg;
+}
+
+
+#primo>.ghost{
+    top: 0;
+    left: 200%;
+}
+/* #primo:hover .ghost{
+    display: block;
+} */
+/* ------------ */
+
+#secondo>.ghost{
+    top: 0;
+    left: 100%;
+}
+/* #secondo:hover .ghost{
+    display: block;
+} */
+/* ------------- */
+
+#terzo >.ghost{
+    top: -100%;
+    left: 200%;
+}
+/* #terzo:hover .ghost{
+    display: block;
+} */
+/* ---------- */
+#quarto>.ghost{
+    top: -100%;
+    left: 100%;
+}
+/* #quarto:hover .ghost{
+    display: block;
+} */
+/* ----------------- */
+#sesto>.ghost{
+    top: 0;
+    right: 300%;
+}
+/* #sesto:hover .ghost{
+    display: block;
+} */
+/* --------------- */
+.partner{
+    position: relative;
+}
+.ghost{
+    position: absolute;
+    display: none;
+    top: -100%;
+    right: 200%;
+    transform: translate(-50%);
+
+}
+.partner:hover .ghost{
+    display: block;
+}
+#ottavo .ghost{
+    right: 300%;
+}
+
+#quinto>.ghost{
+    top: 0;
+    display: none;
+    right: 200%;
+}
+#quinto:hover .ghost{
+    display: block;
+}
+
+#settimo>.ghost{
+    right: 160%;
 }
