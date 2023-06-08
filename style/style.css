@@ -1,6 +1,7 @@
 :root{
     --color-button: #0061ff;
     --color-text-butn: #ffff;
+    --color-back-section: #b4d0e7
 }
 
 
@@ -15,7 +16,7 @@ h1{
     
 }
 header{
-    background-color: #b4d0e7;
+    background-color: var(--color-back-section);
 }
 nav{
     background-color: white;
@@ -23,6 +24,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .box-nav{
@@ -49,7 +52,7 @@ nav{
 
 .btn{
     border: 0;
-    padding: 6px 6px 6px 6px;
+    padding: 8px 12px 8px 12px;
     background-color: var(--color-button);
     color: var(--color-text-butn);
 
@@ -94,22 +97,16 @@ nav{
     padding-bottom: 9px;
 }
 /* -----------main----------------- */
-main{
-    margin-top: 90px;
-}
 
 .select-plan{
     margin: 0 auto;
+    padding-top: 90px;
     max-width: 750px;
 }
 .select{
     display: flex;
     margin-top: 40px;
     gap: 10px;
-}
-.small{
-    max-width: 750px;
-    gap: 30px;
 }
 .normal{
     border: 1px solid #d0d0d3;
@@ -191,7 +188,7 @@ main{
     padding-bottom: 18px;
 }
 .img-section{
-    width: 100px;
+    width: 140px;
 }
 .wrap{
     flex-wrap: wrap;
@@ -202,11 +199,19 @@ main{
 .section-4{
     margin-top: 45px;
 }
+section.small{
+    max-width: 900px;
+    padding-top: 40px;
+}
+div.container.small.flex.wrap{
+    gap: 20px;
+}
 .box-partner{
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 400px;
-    min-width: 30%;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    height: 100%;
+    min-width: 33.3%;
+    background-color: #f5f5f5;
 }
 .mega-square{
     display: flex;
@@ -214,7 +219,7 @@ main{
     width: 100%;
 }
 .partner img{
-    width: 100px;
+    width: 80%;
     fill: white;
 }
 .partner{
@@ -222,6 +227,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 50%;
+    border: 6px  solid transparent;
     aspect-ratio: 1/1;
 }
 .container-partner{
@@ -252,7 +258,7 @@ main{
     background-color: #ffd830;
 }
 .after-partner{
-    max-width: 750px;
+    max-width: 1040px;
     margin: 0 auto;
     padding-top: 6%;
     padding-bottom: 6%;
@@ -332,63 +338,74 @@ footer{
 }
 
 
-#primo>.ghost{
+/* #primo>.ghost{
     top: 0;
     left: 200%;
-}
+} */
 /* #primo:hover .ghost{
     display: block;
 } */
 /* ------------ */
 
-#secondo>.ghost{
+/* #secondo>.ghost{
     top: 0;
     left: 100%;
-}
+} */
 /* #secondo:hover .ghost{
     display: block;
 } */
 /* ------------- */
 
-#terzo >.ghost{
+/* #terzo >.ghost{
     top: -100%;
     left: 200%;
-}
+} */
 /* #terzo:hover .ghost{
     display: block;
 } */
 /* ---------- */
-#quarto>.ghost{
+/* #quarto>.ghost{
     top: -100%;
     left: 100%;
-}
+} */
 /* #quarto:hover .ghost{
     display: block;
 } */
 /* ----------------- */
-#sesto>.ghost{
+/* #sesto>.ghost{
     top: 0;
     right: 300%;
-}
+} */
 /* #sesto:hover .ghost{
     display: block;
 } */
 /* --------------- */
-.partner{
+.container-partner{
     position: relative;
+    background-color: #f5f5f5;
+}
+.ghost img{
+    width: 60%;
 }
 .ghost{
+    width: 33.3%;
+    height: 100%;
     position: absolute;
     display: none;
-    top: -100%;
-    right: 200%;
+    overflow-y: auto;
+    overflow-x: auto;
+    top: 0;
+    left: calc(100% / 2);
     transform: translate(-50%);
 
+}
+.partner:hover{
+    border-color: #0093ce;
 }
 .partner:hover .ghost{
     display: block;
 }
-#ottavo .ghost{
+/* #ottavo .ghost{
     right: 300%;
 }
 
@@ -403,4 +420,19 @@ footer{
 
 #settimo>.ghost{
     right: 160%;
+} */
+#section-blue{
+    background-color: var(--color-back-section);
+}
+
+
+label span{
+    display: inline-block;
+    border: 2px solid #0061ff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+input[type=checkbox]:checked + label{
+    border: 4px #0061ff;
 }
