@@ -319,8 +319,13 @@ footer{
     width: 200px;
     border: 1px solid #0061ff;
 }
-.container-subfooter p{
+.container-subfooter :last-child{
     color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    column-gap: 5px;
+
 }
 .sub-faq{
     display: flex;
